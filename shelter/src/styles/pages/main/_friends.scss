@@ -1,0 +1,124 @@
+.friends {
+    padding-top:80px;
+    padding-bottom: 100px;
+    background-color: $color-light-l;
+
+    @media screen and (max-width: $tablet) {
+        padding-top:0;
+        padding-bottom: 44px;
+    }
+
+    // .friends__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: $tablet) {
+            padding-top: 40px;
+        }
+    }
+
+    // .friends__slider
+
+    &__slider {
+        width: 100%;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: $tablet) {
+            margin-bottom: 40px;
+        }
+    }
+
+    // .ftiends__title
+    
+    &__title {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 60px;
+        color:$color-dark-l;
+
+        @media screen and (max-width: $tablet) {
+            margin-bottom: 43px;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+    
+    
+    @media screen and (max-width: $desktop) {
+        column-gap: 10px;
+    }
+    @media screen and (max-width: $tablet) {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        column-gap: 20px;
+    }
+    
+
+    // .slider__content
+    
+    &__content {
+        display: inline-flex;
+        width: 1080px;
+        height: 435px;
+        column-gap: 90px;
+
+        @media screen and (max-width: $desktop) {
+            column-gap: 40px;
+            width: 620px;
+        }
+
+        @media screen and (max-width: $tablet) {
+            order: 1;
+            margin-bottom: 20px;
+            width: 270px;
+            column-gap: 0;
+        }
+    }
+
+    // .slider__card
+
+    &__card {
+        min-width: 270px;
+        max-width: 270px;
+    }
+
+    // .slider__prev
+
+    &__prev {
+        z-index: 1;
+        @media screen and (max-width: 433px) {
+            margin-left: 50px;
+            margin-right: 50px;
+            order: 2;
+        }
+        @media screen and (max-width: 361px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    
+
+    // .slider__next
+
+    &__next {
+        z-index: 1;
+
+        @media screen and (max-width: 433px) {
+            margin-left: 50px;
+            margin-right: 50px;
+            order: 3;
+        }
+        @media screen and (max-width: 361px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import './common/mixins';
+@import './common/variables';
+@import './common/fonts';
+@import './common/overall';
+@import './common/text';
+
+@import './components/header';
+@import './components/buttons';
+@import './components/card';
+@import './components/footer';
+@import './components/burger';
+@import './components/popup';
+
+@import './pages/main';
+@import './pages/pets';

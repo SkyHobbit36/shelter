@@ -1,0 +1,57 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 9px;
+    overflow: hidden;
+
+    width: 270px;
+    background-color: $color-light-s;
+
+    &:hover {
+        background-color: $color-light-xl;
+
+        & .card__button {
+            background-color: $color-primary-light;
+            border-color: $color-primary-light;
+        }
+    }
+
+    // .card__image
+
+    &__image {
+
+        width: 270px;
+        height: 270px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .card__title
+
+    &__title {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+
+        text-align: center;
+        letter-spacing: 0.06em;
+
+        color: $color-dark-l;
+
+        margin: 28px 0;
+    }
+
+    // .card__button
+
+    &__button {
+        margin-bottom: 30px;
+    }
+}

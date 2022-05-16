@@ -1,0 +1,141 @@
+.pets {
+    padding-top: 120px;
+    background-color: $color-light-l;
+
+    
+    @media screen and (max-width: $desktop) {
+        padding-bottom: 70px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        padding-top: 80px;
+        padding-bottom: 42px;
+    }
+
+    // .pets__container
+
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: $desktop) {
+            padding-top: 80px;
+            padding-bottom: 0;
+        }
+    }
+
+    // .pets__title
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 45px;
+        text-align: center;
+        color:$color-dark-l;
+
+        @media screen and (max-width: $desktop) {
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: $tablet) {
+            margin-bottom: 25px;
+        }
+    }
+
+    // .pets__cards
+
+    &__cards {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transition: transform 0.2s ease;
+
+        @media screen and (max-width: $desktop) {
+            justify-content: center;
+            column-gap: 40px;
+        }
+
+    }
+
+    // .pets__card
+
+    &__card {
+        margin-bottom: 30px;
+        min-width: 270px;
+        height: 435px;
+        
+
+        // @media screen and (max-width: $desktop) {
+        //     &:nth-child(7),&:nth-child(8){
+        //         display: none;
+        //     }
+        // }
+
+        // @media screen and (max-width: $tablet) {
+        //     &:nth-child(4),
+        //     &:nth-child(5),
+        //     &:nth-child(6) {
+        //         display: none;
+        //     }
+        // }
+    }
+
+
+    // .pets__pagination
+
+    // &__pagination {}
+}
+
+.pagination {
+    display: flex;
+    gap:20px;
+
+    @media screen and (max-width: $tablet) {
+        gap:10px;
+    }
+
+    // .pagination__prev-more
+
+    // &__prev-more {}
+
+    // .pagination__prev
+
+    // &__prev {}
+
+    // .pagination__page-number
+
+    // &__page-number {}
+
+    // .pagination__next
+
+    // &__next {}
+
+    // .pagination__next-more
+
+    // &__next-more {}
+}
+
+
+
+.pets-container {
+    height: 940px;
+    overflow: hidden;
+
+    padding: 15px 0;
+    margin-bottom: 14px;
+    
+    @media screen and (max-width: $desktop) {
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 949px) {
+        height: 1410px;
+    }
+    
+    @media screen and (max-width: $tablet) {
+        padding: 20px 0;
+        margin-bottom: -10px;
+    }
+}

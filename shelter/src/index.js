@@ -1,0 +1,7 @@
+import '../node_modules/normalize.css'
+import './styles/index.scss'
+import './scripts/data'
+import './scripts/burger'
+import './scripts/carousel'
+import './scripts/popup'
+import './scripts/pagination'
