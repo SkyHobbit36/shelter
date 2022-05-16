@@ -1,0 +1,43 @@
+.h2 {
+    @include font('Georgia', normal, 400, 44px, 130%);
+
+    @media screen and (max-width: $tablet) {
+        @include font('Georgia', normal, 400, 25px, 130%, 0.06em);
+    }
+}
+
+.h3 {
+    @include font('Georgia', normal, 400, 35px, 130%, 0.06em);
+
+    @media screen and (max-width: $tablet) {
+        @include font('Georgia', normal, 400, 25px, 130%, 0.06em);
+    }
+}
+
+.h3-mobile {
+    @include font('Georgia', normal, 400, 25px, 130%, 0.06em);
+}
+
+.h4 {
+    @include font('Georgia', normal, 400, 20px, 115%, 0.06em);
+}
+
+.h5 {
+    @include font('Georgia', normal, 400, 15px, 110%, 0.06em);
+}
+
+.h5-modal-window {
+    @include font('Georgia', normal, 400, 15px, 110%, 0.06em);
+}
+
+.paragraph-l {
+    @include font('Arial', normal, 400, 15px, 160%);
+}
+
+.paragraph-s {
+    @include font('Arial', italic, 400, 12px, 150%);
+}
+
+.paragraph-mobile-menu {
+    @include font('Arial', normal, 400, 32px, 160%);
+}

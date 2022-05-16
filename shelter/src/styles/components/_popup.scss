@@ -1,0 +1,132 @@
+.popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: $color-blackout;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+
+    
+    
+
+    // .popup__window
+
+    &__window {
+        width: 900px;
+        height: 500px;
+        background-color: $color-light-s;
+        position: relative;
+        border-radius: 9px;
+        display: flex;
+
+        @media screen and (max-width: $desktop) {
+            width: 630px;
+            height: 350px;
+        }
+        
+        @media screen and (max-width: $tablet) {
+            width: 240px;
+            height: auto;
+        }
+    }
+
+    // .popup__image
+
+    &__image {
+        width: 500px;
+        height: 100%;
+
+        @media screen and (max-width: $desktop) {
+            width: 350px;
+        }
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .popup__content
+
+    &__content {
+        width: 350px;
+    }
+
+    // .popup__close
+
+    &__close {
+        background-color: transparent;
+        position: absolute;
+        top: -52px;
+        right: -40px;
+        
+        svg{
+            width: 12px;
+            height: 12px;
+            fill:$color-dark-3xl;
+        }
+    }
+}
+
+.popup-content {
+    padding: 50px 20px 0 30px;
+
+    @media screen and (max-width: $desktop) {
+        padding: 10px;
+    }
+
+    // .popup-content__title
+
+    &__title {
+        @include font('Georgia', normal, 400, 35px, 130%, 0.06em);
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    // .popup-content__breed
+
+    &__breed {
+        margin-bottom: 40px;
+        @media screen and (max-width: $desktop) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .popup-content__text
+
+    &__text {
+        margin-bottom: 40px;
+        @media screen and (max-width: $desktop) {
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+    }
+
+    // .popup-content__list
+
+    // &__list {}
+
+    // .popup-content__item
+
+    &__item {
+        margin-bottom: 11px;
+
+        @media screen and (max-width: $desktop) {
+            margin-bottom: 6px;
+        }
+
+        &::marker {
+            width: 4px;
+            height: 4px;
+            color: $color-primary;
+        }
+    }
+}

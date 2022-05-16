@@ -1,0 +1,88 @@
+%button {
+    box-sizing: border-box;
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    flex-shrink: 0;
+
+    &:hover {
+        background-color: $color-primary-light;
+        border-color: $color-primary-light;
+    }
+}
+
+%button-with-text {
+    color: $color-dark-3xl;
+    padding: 15px 45px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+.button-primary {
+    @extend %button;
+    @extend %button-with-text;
+    border: none;
+    background-color: $color-primary;
+}
+.button-secondary {
+
+    @extend %button;
+    @extend %button-with-text;
+    border: 2px solid $color-primary;
+    background-color: $color-light-xl;
+}
+
+
+
+.button-round {
+    @extend %button;
+
+    width: 52px;
+    height: 52px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: $color-light-xl;
+    border: 2px solid $color-primary;
+    color: $color-dark-3xl;
+
+    //button-round__icon
+
+    &__icon {
+        fill: $color-dark-3xl;
+    }
+
+    &:disabled {
+        border: 2px solid $color-dark-s;
+        background-color: $color-light-xl;
+        color: $color-dark-s;
+        cursor: auto;
+
+        & .button-round__icon {
+            fill: $color-dark-s;
+        }
+    }
+
+    &--active {
+        background-color: $color-primary-light;
+        border-color: $color-primary-light;
+    }
+}
+
+
+.burger-button {
+    width: 32px;
+    height: 22px;
+    border: none;
+    background-color: transparent;
+    z-index: 5;
+    transition: transform .2s ease;
+    transform-origin: 70% 50%;
+    cursor: pointer;
+}

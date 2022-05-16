@@ -1,0 +1,36 @@
+.burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    right: -320px;
+    top: 0;
+
+    transition: right .2s ease;
+    background-color: $color-dark-3xl;
+
+    & .main-navigation__list {
+        display: flex;
+        flex-direction: column;
+    }
+    & .main-navigation__item {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+        font-size: 32px;
+    }
+    & .main-navigation__link {
+        color: $color-dark-s;
+    }
+
+    &--active {
+        right: 0;
+    }
+
+    // .header--main-page & {
+    //     background-color: $color-dark-3xl;
+    // }
+}

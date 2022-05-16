@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Arial',sans-serif;
+    scroll-behavior:smooth;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    @media screen and (max-width: $desktop) {
+        padding: 0 30px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        padding: 0 10px;
+    }
+}
+
+.blackout {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: $color-blackout;
+}
